@@ -6,6 +6,7 @@
 }
 
     body{
+        background-color: #011f26;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,10 +74,11 @@
                 margin-top: -30px;
                 box-shadow: 2px 20px 25px #dc2e685d;
                 border-color: #dc2e69;
+                cursor: pointer;
 
             }
 
-            .container .card:hover img {
+           .container .card:hover img {
                 filter: invet(1);
 
             }
@@ -89,14 +91,10 @@
             .container .card:hover a {
                 color: black;
                 background-color: white;
-
             }
 
-            .container .card:hover #face  {
-                color: white;
-                background-color: rgba(43, 255, 0, 0.585);
-
-            }
+             
+           
 
               
 
