@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 255, 243);
+}
+
+/*.velocidade {
+    
+ 
+    width: 450px;
+    height: 350px;
+}*/
+.q1{
+    background-color: rgb(255, 0, 0);
+    text-align: justify;
+    color: white;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+.q2{
+    background-color: green;
+    text-align: justify;
+    color: white;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;   
+    margin: 10px;    
+  }  
+  .q3{
+    font-size: 20px;
+    background-color: blue;
+    text-align: justify;
+    color: white;
+    width: 30%;
+    height: 50px;
+    text-align: center; 
+    margin: 10px;  
+  } 
+
+  input{
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+    background-color: aquamarine;
+  }
+  /* configurar da paisagem*/
+  .sky {
+     margin: 1px;
+     width: 100vw;
+    height: 80vh;
+    background-image: url(img/sky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.tree {
+    height: 50vh;
+    background-image: url(img/tree-removebg-preview\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+    .track {
+        background-image: url(img/track.jpeg);
+        background-repeat: repeat-x;
+        position: absolute;
+        bottom: 0px;
+        width: 900vw;
+        height: 20vh; 
+         
+        animation: trackanimation 25s linear infinite;
+    } 
+
+    .car {
+        background-image: url(img/car-removebg-preview.png);
+        background-repeat: repeat-x;
+        background-size: cover;
+        width: 17rem;
+        height: 4.699rem;
+        position: absolute;
+        bottom: 77px;
+        left: 396px;
+  
+        animation: caranimation 8s linear infinite;
+
+    }
+
+    .wheel {
+        position: absolute;
+        animation: wheelanimation linear 8s infinite;
+    }
+
+    .wheel1 {
+        background-image: url(img/wheel1-removebg-preview.png);
+        background-size: contain;
+        background-repeat: repeat-x;
+        width: 49px;
+        height: 49px;
+        bottom: 71px;
+        left: 570px;
+        position: absolute;
+        animation: caranimation 8s linear infinite;
+    }
+     
+    .wheel2 {
+        background-image: url(img/wheel2-removebg-preview.png);
+        background-size: contain;
+        background-repeat: repeat-x;
+        width: 46px;
+        height: 44px;
+        bottom: 77px;
+        left: 433px;
+        position: absolute;
+        animation: caranimation 8s linear infinite;
+    }
+
+    @keyframes wheelanimation {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes trackanimation {
+        100% {
+            transform: translate(-500vw);
+        }
+    }
+
+    @keyframes caranimation {
+        from{
+            left: -1px;
+        }
+
+        to{
+            left: 1900px;
+        }
+    }
+  
+  

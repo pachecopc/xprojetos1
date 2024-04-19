@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <link rel="stylesheet" href="detran.css">
+    
+</head>
+<body>
+    <p><a href="file:///C:/Users/paulo/Documents/Estudo/javascript/exercicio/index1.html">Voltar ao Inicio</a></p>
+    <!--<h1>Sistema de Velocidades </h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">     
+      </div>-->
+
+      <div class="sky">
+        <div class="velocidade">
+          <h1>Sistema de Velocidades </h1>
+              Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+           <input type="button" value="Verificar" onclick="calcular()">
+             <div id="res">     
+             </div>
+        </div>
+        <div class="tree"></div>
+        <div class="track"></div>
+        <div class="car"></div>
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+        
+
+     </div>
+<script>
+    function calcular() {
+    var txtv = window.document.querySelector('input#txtvel')
+    var res = window.document.querySelector('div#res')
+    var vel = Number(txtv.value)
+    res.innerHTML = `<p class="q3">Sua Velocidade atual é de <strong> ${vel} Km/m</strong></p>`
+    if (vel > 60) {
+        res.innerHTML += '<p class="q1">Você está <strong>MULTADO</strong> por exesso de Velocidade. <strong class="rua"> A Velocidade permetida é de 60Km</strong></p>'
+}
+res.innerHTML += '<p class="q2">Dirija Sempre com CUIDADO, e use o  Sinto de Segurança!</p>'
+}
+</script>
+</body>
+</html>
