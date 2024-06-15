@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saque Caixa Eletronico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "inter" sans-serif;
+        }
+
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-orange-500">
+    <div class="flex justify-center h-screen items-center">
+        <form action=""class="bg-gray-100 w-full max-w-md shadow-2xl">
+            <fieldset>
+                <legend class="text-3xl p-8 bg-orange-400 w-full text-white">Caixa Eletrônico</legend>
+                    <div class="m-8 mb-0">
+                        <input type="text" name="" id="valor" class="p-3 w-full borde-2 border-gray-300 value  placeholder="Valor do Saque:">
+                    </div>
+                    <div class="m-8 mb-0">
+                        <p class="p-3 bg-orange-200 font-medium">Notas Disponíveis: 100, 50 e 10</p>
+                    </div>
+                    <div class="m-8">
+                        <button class="bg-orange-500 text-white uppercase p-3 w-full font-medium btn">Exibir Saque</button>
+                    </div>
+                    <div class="m-8">
+                        <p class="p-3 bg-orange-500 mb-2 text-white notasCem none"></p>
+                        <p class="p-3 bg-orange-400 mb-2 text-white notasCinquenta none"></p>
+                        <p class="p-3 bg-orange-300 mb-2 text-white notasDez none" ></p>
+                       
+                    </div>                
+            </fieldset>
+        </form>
+        <script src="script.js"></script>
+       
+        
+    </div>
+</body>
+</html>
