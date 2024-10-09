@@ -14,7 +14,7 @@ function verSaldo(){
 
 function verExtrato(){
     let senha = prompt('Por favor, insira sua senha:');
-    if (senha === '3589') {
+    if (senha === '1234') {
         let extrato ='Extrato:\n' +
         '25/03 - Pix     | Ilha do Camarao -> -150.00\n' +
         '26/03 - Débito  | Cinemax -> -50.00\n' +
